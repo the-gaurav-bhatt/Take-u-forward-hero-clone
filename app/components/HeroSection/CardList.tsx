@@ -36,9 +36,9 @@ const CardList = () => {
   ];
 
   return (
-    <div className="px-20 flex flex-wrap justify-center ">
+    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 sm:px-6 md:px-10 lg:px-20">
       {cardsData.map((card, index) => (
-        <div key={index} className=" basis-1/3">
+        <div key={index} className="p-4">
           <Card img={card.img} title={card.title} body={card.body} />
         </div>
       ))}

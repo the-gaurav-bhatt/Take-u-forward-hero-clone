@@ -11,7 +11,7 @@ const Card = ({
 }) => {
   return (
     <div>
-      <div className=" max-w-md p-6 min-h-80 my-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:border-red-500 dark:hover:border-white transition-all duration-300">
+      <div className=" max-w-md p-2 lg:p-6 min-h-80 my-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:border-red-500 dark:hover:border-white transition-all duration-300">
         {/* // img of size 20 20 */}
         <svg
           className="w-20 h-20 text-gray-500 dark:text-gray-400 mb-3"

@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <HeaderWithCountdown />
-      <ThemeSwitch />
+      {/* <ThemeSwitch /> */}
       <TUFCard
         imgSrc="/tufImg.png"
         title="Elevate Your Learning Journey with TUF+ Course"

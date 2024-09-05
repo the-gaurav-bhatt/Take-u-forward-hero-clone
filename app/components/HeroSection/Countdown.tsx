@@ -45,15 +45,15 @@ const Countdown: React.FC<CountdownProps> = ({ deadline }) => {
       </div>
       <div className="flex space-x-4 text-center">
         <div className="flex flex-col items-center">
-          <span className="text-4xl font-bold">{timeLeft.days}</span>
+          <span className="text-4xl font-bold">{timeLeft.days} :</span>
           <span className="text-xs uppercase">Days</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="text-4xl font-bold">{timeLeft.hours}</span>
+          <span className="text-4xl font-bold">{timeLeft.hours} :</span>
           <span className="text-xs uppercase">Hours</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="text-4xl font-bold">{timeLeft.minutes}</span>
+          <span className="text-4xl font-bold">{timeLeft.minutes} :</span>
           <span className="text-xs uppercase">Minutes</span>
         </div>
         <div className="flex flex-col items-center">
