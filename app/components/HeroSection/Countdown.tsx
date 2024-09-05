@@ -28,7 +28,10 @@ const Countdown: React.FC<CountdownProps> = ({ deadline }) => {
   };
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-
+  const [mounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, [mounted]);
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
@@ -36,14 +39,17 @@ const Countdown: React.FC<CountdownProps> = ({ deadline }) => {
 
     return () => clearInterval(timer);
   }, [deadline]);
-
+  if (!mounted) return <div>Loading...</div>;
   return (
     <div className="flex flex-col items-center">
       <div className="text-xl font-bold text-red-500 mb-2">USE "BIRTHDAY"</div>
       <div className="text-sm mb-4">
         Lifetime under 5K as it's Striver's birthday weekend!
       </div>
-      <div className="flex space-x-4 text-center">
+      <div
+        suppressHydrationWarning={true}
+        className="flex space-x-4 text-center"
+      >
         <div className="flex flex-col items-center">
           <span className="text-4xl font-bold">{timeLeft.days} :</span>
           <span className="text-xs uppercase">Days</span>

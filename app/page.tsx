@@ -1,5 +1,3 @@
-"use client";
-import ThemeSwitch from "./components/Contexts/themeSwitcher";
 import CardList from "./components/HeroSection/CardList";
 import HeaderWithCountdown from "./components/HeroSection/HeaderWithCountDown";
 import InstructorCard from "./components/HeroSection/InstructorCard";
